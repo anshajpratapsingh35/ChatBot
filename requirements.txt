@@ -1,0 +1,41 @@
+# Multimodal AI Companion MVP Dependencies
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+python-dotenv>=1.0.0
+python-multipart>=0.0.9
+
+# Database & ORM
+SQLAlchemy>=2.0.30
+pymysql>=1.1.0
+cryptography>=42.0.0
+
+# AI & LLM Providers
+google-genai>=2.0.0
+openai>=1.50.0
+
+# Document Processing & RAG
+PyMuPDF>=1.23.0
+python-docx>=1.1.0
+scikit-learn>=1.5.0
+numpy>=1.26.0
+
+# Image & Multimodal
+Pillow>=10.0.0
+
+# Audio Processing (STT & TTS)
+edge-tts>=6.1.0
+gTTS>=2.5.0
+
+# Security & Rate Limiting
+slowapi>=0.1.9
+
+# Streamlit Frontend
+streamlit>=1.35.0
+requests>=2.32.0
+httpx>=0.28.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

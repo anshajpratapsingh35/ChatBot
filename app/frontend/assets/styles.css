@@ -1,0 +1,179 @@
+/* Modern Dark Violet / Purple Theme for Multimodal AI Companion */
+
+:root {
+    --bg-primary: #0d0c15;
+    --bg-secondary: #161426;
+    --bg-card: #1f1c35;
+    --accent-purple: #8b5cf6;
+    --accent-violet: #7c3aed;
+    --accent-glow: rgba(139, 92, 246, 0.35);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: rgba(139, 92, 246, 0.2);
+}
+
+/* Global App Styling */
+.stApp {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Sidebar Dark Glassmorphism */
+[data-testid="stSidebar"] {
+    background-color: var(--bg-secondary) !important;
+    border-right: 1px solid var(--border-color) !important;
+}
+
+[data-testid="stSidebar"] hr {
+    border-color: var(--border-color);
+}
+
+/* Header Banner */
+.companion-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(139, 92, 246, 0.05) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.companion-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(90deg, #c084fc, #e879f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.companion-header p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* Chat Message Bubbles */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.message-row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.user-row {
+    justify-content: flex-end;
+}
+
+.assistant-row {
+    justify-content: flex-start;
+}
+
+.user-bubble {
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+    color: #ffffff;
+    padding: 14px 18px;
+    border-radius: 18px 18px 4px 18px;
+    max-width: 80%;
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.25);
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.assistant-bubble {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 16px 20px;
+    border-radius: 18px 18px 18px 4px;
+    max-width: 85%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Badge styling */
+.badge-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-empathy {
+    background-color: rgba(168, 85, 247, 0.2);
+    color: #c084fc;
+    border: 1px solid rgba(168, 85, 247, 0.4);
+}
+
+.badge-rag {
+    background-color: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.badge-crisis {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+/* Citation Box */
+.citation-box {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background-color: rgba(15, 23, 42, 0.6);
+    border-left: 3px solid #3b82f6;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.citation-title {
+    font-weight: 600;
+    color: #93c5fd;
+    margin-bottom: 4px;
+}
+
+/* Custom Buttons */
+.stButton>button {
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+.stButton>button:hover {
+    box-shadow: 0 0 15px var(--accent-glow) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Input Fields */
+.stTextInput>div>div>input {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    color: white !important;
+    border-radius: 8px !important;
+}
+
+.stTextInput>div>div>input:focus {
+    border-color: var(--accent-purple) !important;
+    box-shadow: 0 0 10px var(--accent-glow) !important;
+}
